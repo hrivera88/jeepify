@@ -1,0 +1,15 @@
+<div class="jp-input-overlay" (click)="closeInputOverlay($event)">
+    <div class="jp-input-overlay-container">
+        <div class="field has-addons" [ngClass]="{'has-error': hasError}">
+            <p class="control">
+                <span class="input-label">{{inputLabel}}</span>
+                <input type="text" [(ngModel)]="term" id="overlayInput" placeholder="Do it..." class="input">
+            </p>
+            <p class="control">
+                <button class="button">
+                    <img src="./assets/icon-white-input-{{buttonIcon}}.svg" alt="">
+                </button>
+            </p>
+        </div>
+    </div>
+</div>

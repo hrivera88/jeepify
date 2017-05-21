@@ -1,0 +1,39 @@
+<div class="jp-explore">
+    <div class="jp-explore-container">
+        <h1 class="chill-message">Because what you have sucks now...</h1>
+        <div class="jp-explore-search-section">
+            <jp-search ngDefaultControl [(ngModel)]="searchTerm" (keypress)="hello($event.key)"></jp-search>
+        </div>
+        <div class="jp-explore-playlists">
+            <div class="jp-explore-playlist-title">
+                <p>Genres &amp; Mood</p>
+            </div>
+            <div class="jp-explore-playlist-container">
+                <div class="jp-explore-playlist-item">
+                    <jp-media-box [backgroundImage]="backgroundImage" [title]="title" [isPlaylist]="true"></jp-media-box>
+                </div>
+                <div class="jp-explore-playlist-item">
+                    <jp-media-box [backgroundImage]="backgroundImage" [title]="title" [isPlaylist]="true"></jp-media-box>
+                </div>
+                <div class="jp-explore-playlist-item">
+                    <jp-media-box [backgroundImage]="backgroundImage" [title]="title" [isPlaylist]="true"></jp-media-box>
+                </div>
+                <div class="jp-explore-playlist-item">
+                    <jp-media-box [backgroundImage]="backgroundImage" [title]="title" [isPlaylist]="true"></jp-media-box>
+                </div>
+                <div class="jp-explore-playlist-item">
+                    <jp-media-box [backgroundImage]="backgroundImage" [title]="title" [isPlaylist]="true"></jp-media-box>
+                </div>
+                <div class="jp-explore-playlist-item">
+                    <jp-media-box [backgroundImage]="backgroundImage" [title]="title" [isPlaylist]="true"></jp-media-box>
+                </div>
+                <div class="jp-explore-playlist-item">
+                    <jp-media-box [backgroundImage]="backgroundImage" [title]="title" [isPlaylist]="true"></jp-media-box>
+                </div>
+                <div class="jp-explore-playlist-item">
+                    <jp-media-box [backgroundImage]="backgroundImage" [title]="title" [isPlaylist]="true"></jp-media-box>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

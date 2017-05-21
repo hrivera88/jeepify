@@ -1,0 +1,14 @@
+<div class="jp-controls-section columns">
+    <div class="jp-controls-section-one column is-one-third">
+        <div class="jp-control-one">
+            <jp-button [icon]="controlOneIcon"></jp-button>
+        </div>
+        <div class="jp-control-two">
+            <jp-button [icon]="controlTwoIcon"></jp-button>
+        </div>
+    </div>
+    <div class="jp-controls-section-two column">
+        <jp-media-player *ngIf="routeView != '/now-playing'"></jp-media-player>
+        <jp-volume *ngIf="routeView == '/now-playing'"></jp-volume>
+    </div>
+</div>

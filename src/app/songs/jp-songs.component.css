@@ -1,0 +1,34 @@
+.jp-songs {
+    width: 100%;
+    height: 100%;
+}
+.jp-songs-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+    height: 100%;
+    margin: .75em;
+    margin-top: 0;
+}
+.jp-songs-shuffle-section {
+    flex: 0 0 auto;
+    width: 25%;
+    align-self: center;
+    height: 45px;
+    margin-bottom: .75em;
+    margin-top: .75em;
+}
+.jp-songs-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex: 2;
+}
+.jp-songs-list > * {
+    margin-bottom: .75em;
+}
+jp-song {
+    width: 100%;
+}

@@ -1,0 +1,53 @@
+.jp-song-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    height: 75px;
+    box-shadow: 0px 0px 5px 0px rgba(42, 107, 31, 0.4);
+}
+.jp-song-container > * {
+    margin-right: .75em;
+}
+.jp-song-save {
+    flex: 0 1 auto;
+    height: 100%;
+}
+.jp-song-title {
+    flex: 3 0 auto;
+    color: #808080;
+}
+.jp-song-artist {
+    flex: 1 0 auto;
+    color: #808080;
+}
+.jp-song-album {
+    flex: 1 0 auto;
+    color: #808080;
+}
+.jp-song-length {
+    flex: 0 1 auto;
+    color: #808080;
+}
+.icon-plus-container {
+    width: 100%;
+    padding-top: 1.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    height: 100%; 
+}
+.icon-plus-container.saved {
+    background-color: #1dca7f;
+}
+svg#icon-plus {
+    width: 23px;
+    height: 23px;
+    margin: auto;
+}
+.icon-plus {
+    fill: #808080;
+}
+.icon-plus.saved {
+    fill: #fff;
+}

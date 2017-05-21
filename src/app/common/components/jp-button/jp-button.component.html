@@ -1,0 +1,8 @@
+<div class="jp-button-container" [style.background-color]="buttonColor" [style.color]="buttonTextColor">
+    <div class="jp-button-icon" *ngIf="icon" [ngClass]="{'has-text': buttonText}">
+        <img src="./assets/icon-{{icon}}.svg" alt="">
+    </div>
+    <div class="jp-button-text">
+        <p>{{buttonText}}</p>
+    </div>
+</div>

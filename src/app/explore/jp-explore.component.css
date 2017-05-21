@@ -1,0 +1,49 @@
+.jp-explore {
+    width: 100%;
+    height: 100%;
+}
+.jp-explore-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+    height: 100%;
+    margin: .75em;
+    margin-top: 0;
+}
+.jp-explore-search-section {
+    flex: 1;
+    width: 50%;
+    align-self: center;
+}
+.jp-explore-playlists {
+    flex: 3;
+    margin: 0 .75em;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+.jp-explore-playlist-title {
+    color: #1dca7f;
+    align-self: flex-start;
+}
+.jp-explore-playlist-container {
+    margin: .75em 0 96px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 396px;
+}
+.jp-explore-playlist-item {
+    width: 150px;
+    height: 150px;
+    margin: 0 .75em 1.5em;
+}
+.jp-explore-playlist-item:first-child, .jp-explore-playlist-item:nth-child(5) {
+    margin-left: 0;
+}
+.jp-explore-playlist-item:last-child, .jp-explore-playlist-item:nth-child(4) {
+    margin-right: 0;
+}

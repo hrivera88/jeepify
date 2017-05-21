@@ -1,0 +1,11 @@
+.jp-home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+    height: 70vh;
+}
+.jp-home-row {
+    margin: .75em;
+    height: 45%;
+}

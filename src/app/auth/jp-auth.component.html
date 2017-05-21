@@ -1,0 +1,24 @@
+<jp-input-overlay [ngClass]="{'overlay-active': showOverlay}" (closeinputoverlay)="toggleInputOverlay($event)" [inputLabel]="inputLabel"></jp-input-overlay>
+<div class="jp-auth">
+    <div class="jp-auth-container">
+        <div class="jp-auth-form-top-bar">
+            <div class="top-bar-icon">
+                <img src="./assets/icon-white-sign-in.svg" alt="">
+            </div>
+            <div class="top-bar-text">
+                <p>Incorrect Crendentials</p>
+            </div>
+        </div>
+        <div class="jp-auth-form-fields">
+            <p class="control">
+                <input type="text" id="auth-username" placeholder="Enter Username or Email" class="input" (focus)="toggleInputOverlay($event)">
+            </p>
+            <p class="control">
+                <input type="text" id="auth-password" placeholder="Enter Password" class="input" (focus)="toggleInputOverlay($event)">
+            </p>
+            <div class="jp-auth-form-button">
+                <button class="button">Sign In</button>
+            </div>
+        </div>
+    </div>
+</div>

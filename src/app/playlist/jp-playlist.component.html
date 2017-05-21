@@ -1,0 +1,35 @@
+<div class="jp-playlist">
+    <div class="jp-playlist-container">
+        <div class="jp-playlist-album">
+            <div class="jp-playlist-album-info columns">
+                <div class="jp-playlist-album-image column is-3">
+                    <img src="./assets/album-pic.jpg" alt="">
+                </div>
+                <div class="jp-playlist-album-actions column">
+                    <div class="jp-playlist-actions-container">
+                        <div class="info">
+                            <h4 class="jp-playlist-title">
+                                Rancheras Mix
+                            </h4>
+                            <p class="jp-playlist-creator">
+                                Created By sgballer
+                            </p>
+                        </div>
+                        <div class="buttons half">
+                            <jp-button [icon]="playButtonIcon" [buttonText]="playButtonText"></jp-button>
+                            <jp-button [icon]="followingButtonIcon" [buttonText]="followingButtonText"></jp-button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="jp-playlist-album-song-list">
+                <jp-song [saved]="saved" [songTitle]="songTitle" [songArtist]="songArtist" [songAlbum]="songAlbum" [songLength]="songLength" ></jp-song>
+                <jp-song [saved]="saved" [songTitle]="songTitle" [songArtist]="songArtist" [songAlbum]="songAlbum" [songLength]="songLength" ></jp-song>
+                <jp-song [saved]="saved" [songTitle]="songTitle" [songArtist]="songArtist" [songAlbum]="songAlbum" [songLength]="songLength" ></jp-song>
+                <jp-song [saved]="saved" [songTitle]="songTitle" [songArtist]="songArtist" [songAlbum]="songAlbum" [songLength]="songLength" ></jp-song>
+                <jp-song [saved]="saved" [songTitle]="songTitle" [songArtist]="songArtist" [songAlbum]="songAlbum" [songLength]="songLength" ></jp-song>
+            </div>
+        </div>
+        <jp-spacer></jp-spacer>
+    </div>
+</div>

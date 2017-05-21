@@ -1,0 +1,56 @@
+.jp-now-playing {
+    height: 100%;
+    width: 100%;
+}
+.jp-now-playing-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin: .75em 1.5em;
+}
+.jp-now-playing-queue {
+    margin-bottom: .75em;
+}
+.jp-now-playing-artist-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.jp-now-playing-songs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.jp-now-playing-current {
+    margin-bottom: .75em;
+}
+.jp-now-playing-current, .jp-now-playing-next {
+    height: 50%;
+    background: #fff;
+    box-shadow: 0px 0px 5px 0px rgba(42, 107, 31, 0.4);
+}
+.jp-now-playing-next {
+    display: flex;
+    flex-direction: column;
+    padding: .75em;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.jp-now-playing-next > h2 {
+    font-weight: 600;
+    color: #1dca7f; 
+}
+.jp-now-playing-next-song {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.jp-now-playing-song-controls {
+    flex: 2;
+}
+.jp-now-playing-song-controls > * {
+    height: 49%;
+}

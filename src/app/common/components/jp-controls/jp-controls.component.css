@@ -1,0 +1,13 @@
+.jp-controls-section {
+    height: 100%;
+    margin: 0 .75em;
+}
+.jp-controls-section-one {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+.jp-control-one, .jp-control-two {
+    width: 49%;
+}

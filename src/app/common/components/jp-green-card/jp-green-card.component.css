@@ -1,0 +1,40 @@
+.jp-green-card-container {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    box-shadow: 0px 0px 5px 0px rgba(42, 107, 31, 0.4);
+}
+.jp-green-section {
+    background-color: #1dca7f;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.jp-green-section-icon {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+}
+.jp-green-section-icon img {
+    width: 54px;
+    height: 54px;
+    display: block;
+}
+.jp-white-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.jp-white-section p {
+    font-family: 'helveticaNeue-light';
+    color: #1dca7f;
+    text-align: center;
+}

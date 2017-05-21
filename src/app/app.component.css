@@ -1,0 +1,21 @@
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    /*height: 100%;*/
+    justify-content: space-around;
+}
+jp-top-bar {
+    height: 12vh;
+}
+main {
+    height: 68vh;
+}
+jp-controls {
+    height: 20vh;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 20;
+}

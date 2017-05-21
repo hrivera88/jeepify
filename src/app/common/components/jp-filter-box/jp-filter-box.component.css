@@ -1,0 +1,32 @@
+.jp-filter-box {
+    height: 100%;
+    width: 100%;
+    background-color: #4d4d4d;
+    cursor: pointer;
+}
+.jp-filter-box-container {
+    min-height: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: .25em;
+    color: #fff;
+}
+.filter-icon {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: .75em;
+}
+.filter-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.filter-text p::first-letter {
+    text-transform: capitalize;
+}

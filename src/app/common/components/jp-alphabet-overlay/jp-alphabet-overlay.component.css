@@ -1,0 +1,23 @@
+.jp-alphabet-overlay {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+}
+.jp-alphabet-overlay-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 80%;
+    margin: auto;
+}
+.jp-alphabet-letter {
+    width: 20%;
+    margin-right: 2.61em;
+}
+.jp-alphabet-letter:nth-child(4n+4) {
+    margin-right: 0;
+}

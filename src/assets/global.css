@@ -1,0 +1,27 @@
+html, body {
+    /*height: 100%;*/
+}
+.chill-message {
+    text-align: center;
+    color: #1dca7f;
+}
+.jp-alphabet-letter {
+    width: 54px;
+    min-height: 54px;
+    border: 1px solid #1dca7f;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.jp-alphabet-letter.overlay {
+    border: 1px solid #fff;
+}
+.jp-alphabet-letter.overlay > a {
+    color: #fff;
+}
+.jp-alphabet-letter > a {
+    font-size: 22px;
+    text-decoration: none;
+}

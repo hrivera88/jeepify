@@ -1,0 +1,42 @@
+.jp-artists {
+    height: 100%;
+    width: 100%;
+}
+.jp-artists-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+    margin: 0.75em;
+}
+.jp-artists-container > * {
+    margin-bottom: .75em;
+}
+.jp-artists-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.jp-artist-list-item {
+    width: 24%;
+    margin-right: .25em;
+    height: 150px;
+    margin-bottom: .75em
+}
+.jp-artist-list-item:last-child {
+    margin-right: 0;
+}
+jp-alphabet-overlay {
+    display: none;
+}
+jp-alphabet-overlay.overlay-active {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+}

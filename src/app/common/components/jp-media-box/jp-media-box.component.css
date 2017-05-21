@@ -1,0 +1,31 @@
+.jp-media-box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.jp-media-box-container {
+    height: 100%;
+    background-position: center;
+    background-size: 150px 150px;
+    display: flex;
+    flex-direction: row;
+    padding: .75em;
+    align-items: center;
+    justify-content: center;
+}
+.jp-media-box-container.is-playlist {
+    align-items: flex-end;
+}
+.jp-media-box-title {
+    color: #fff;
+    z-index: 2
+}
+.jp-media-box-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}

@@ -1,0 +1,113 @@
+<div class="jp-search-results">
+    <div class="jp-search-results-container">
+        <h4 class="chill-message">The results are in...</h4>
+        <div class="jp-search-results-search-bar">
+            <jp-search></jp-search>
+        </div>
+        <div class="filter-box-section" *ngIf="currentView != 0 && currentView != -1">
+            <div class="filter-box-button" (click)="clearFilter()">
+                <jp-filter-box [buttonText]="filterButtonText"></jp-filter-box>
+            </div>
+        </div>
+        <div class="jp-search-results no-results" *ngIf="currentView == -1">
+            <div class="no-results-icon">
+                <img src="./assets/icon-smiley.svg" alt="">
+            </div>
+            <div class="no-results-text">
+                <p>Drunk typing? We got no results...</p>
+            </div>
+        </div>
+        <div class="jp-search-results all" *ngIf="currentView == 0">
+            <div class="jp-search-results-result-boxes">
+                <div class="jp-search-result-box" [routerLink]="['/search-results', 'artists']">
+                    <jp-media-box [title]="title"></jp-media-box>
+                    <div class="label">
+                        <p>Artists</p>
+                    </div>
+                </div>
+                <div class="jp-search-result-box" [routerLink]="['/search-results', 'songs']">
+                    <jp-media-box [title]="title"></jp-media-box>
+                    <div class="label">
+                        <p>Songs</p>
+                    </div>
+                </div>
+                <div class="jp-search-result-box" [routerLink]="['/search-results', 'albums']">
+                    <jp-media-box [title]="title"></jp-media-box>
+                    <div class="label">
+                        <p>Albums</p>
+                    </div>
+                </div>
+                <div class="jp-search-result-box" [routerLink]="['/search-results', 'playlists']">
+                    <jp-media-box [title]="title"></jp-media-box>
+                    <div class="label">
+                        <p>Playlists</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="jp-search-results artists" *ngIf="currentView == 1">
+            <div class="jp-search-results-result-boxes">
+                <div class="jp-search-result-box">
+                    <jp-media-box [title]="artistName"></jp-media-box>
+                </div>
+                <div class="jp-search-result-box">
+                    <jp-media-box [title]="artistName"></jp-media-box>
+                </div>
+                <div class="jp-search-result-box">
+                    <jp-media-box [title]="artistName"></jp-media-box>
+                </div>
+                <div class="jp-search-result-box">
+                    <jp-media-box [title]="artistName"></jp-media-box>
+                </div>
+            </div>
+        </div>
+        <div class="jp-search-results songs" *ngIf="currentView == 2">
+            <div class="jp-search-results-result-boxes">
+                <div class="jp-search-result-box">
+                    <jp-media-box [title]="songName"></jp-media-box>
+                </div>
+                <div class="jp-search-result-box">
+                    <jp-media-box [title]="songName"></jp-media-box>
+                </div>
+                <div class="jp-search-result-box">
+                    <jp-media-box [title]="songName"></jp-media-box>
+                </div>
+                <div class="jp-search-result-box">
+                    <jp-media-box [title]="songName"></jp-media-box>
+                </div>
+            </div>
+        </div>
+        <div class="jp-search-results albums" *ngIf="currentView == 3">
+            <div class="jp-search-results-result-boxes">
+                <div class="jp-search-result-box">
+                    <jp-media-box [title]="albumName"></jp-media-box>
+                </div>
+                <div class="jp-search-result-box">
+                    <jp-media-box [title]="albumName"></jp-media-box>
+                </div>
+                <div class="jp-search-result-box">
+                    <jp-media-box [title]="albumName"></jp-media-box>
+                </div>
+                <div class="jp-search-result-box">
+                    <jp-media-box [title]="albumName"></jp-media-box>
+                </div>
+            </div>
+        </div>
+        <div class="jp-search-results playlists" *ngIf="currentView == 4">
+            <div class="jp-search-results-result-boxes">
+                <div class="jp-search-result-box">
+                    <jp-media-box [title]="playlistName"></jp-media-box>
+                </div>
+                <div class="jp-search-result-box">
+                    <jp-media-box [title]="playlistName"></jp-media-box>
+                </div>
+                <div class="jp-search-result-box">
+                    <jp-media-box [title]="playlistName"></jp-media-box>
+                </div>
+                <div class="jp-search-result-box">
+                    <jp-media-box [title]="playlistName"></jp-media-box>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

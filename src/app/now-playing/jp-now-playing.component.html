@@ -1,0 +1,51 @@
+<div class="jp-now-playing">
+    <div class="jp-now-playing-container">
+        <div class="jp-now-playing-queue columns">
+            <div class="jp-now-playing-artist-image column is-3">
+                <img src="./assets/pitbull.jpg" alt="">
+            </div>
+            <div class="jp-now-playing-songs column">
+                <div class="jp-now-playing-current">
+                    <jp-media-player></jp-media-player>
+                </div>
+                <div class="jp-now-playing-next">
+                    <h2>Next Song:</h2>
+                    <div class="jp-now-playing-next-song">
+                        <p>Somebody Else - The 1975</p>
+                        <p>5:47</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="jp-now-playing-song-controls">
+            <div class="jp-now-playing-top-controls columns">
+                <div class="jp-now-playing-control column">
+                    <jp-button [icon]="playButtonIcon"></jp-button>
+                </div>
+                <div class="jp-now-playing-control column">
+                    <jp-button [icon]="stopButtonIcon"></jp-button>
+                </div>
+                <div class="jp-now-playing-control column">
+                    <jp-button [icon]="repeatButtonIcon"></jp-button>
+                </div>
+                <div class="jp-now-playing-control column is-6">
+                    <jp-button [icon]="saveButtonIcon" [buttonText]="saveButtonText"></jp-button>
+                </div>
+            </div>
+            <div class="jp-now-playing-bottom-controls columns">
+                <div class="jp-now-playing-control column">
+                    <jp-button [icon]="previousButtonIcon"></jp-button>
+                </div>
+                <div class="jp-now-playing-control column">
+                    <jp-button [icon]="nextButtonIcon"></jp-button>
+                </div>
+                <div class="jp-now-playing-control column">
+                    <jp-button [icon]="shuffleButtonIcon"></jp-button>
+                </div>
+                <div class="jp-now-playing-control column is-6">
+                    <jp-button [icon]="followButtonIcon" [buttonText]="followButtonText"></jp-button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
